@@ -1,0 +1,20 @@
+name: panodio
+description: An audio interface to the acoustic web
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  flutter_tts: ^0.8.5
+  speech_to_text: ^0.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
