@@ -14,7 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ButtonTheme(
           minWidth: 360,
           height: 640,
-          child: RaisedButton(
+          child: ElevatedButton(
             onPressed: Speech().listen,
             child: Text(
               "   Drücke mich,\n"

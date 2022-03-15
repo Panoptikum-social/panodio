@@ -4,7 +4,7 @@ class Panodio {
   String command;
   Tts tts = new Tts();
 
-  Panodio({this.command}) {
+  Panodio({required this.command}) {
     tts.speak(command);
   }
 }
