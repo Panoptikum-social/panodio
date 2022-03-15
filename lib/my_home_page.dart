@@ -16,6 +16,10 @@ class _MyHomePageState extends State<MyHomePage> {
         width: double.infinity,
         height: double.infinity,
         child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            primary: Colors.deepOrange, // background
+            onPrimary: Colors.white, // foreground
+          ),
           onPressed: Speech().listen,
           child: const Text(
             "   Drücke mich,\n"
