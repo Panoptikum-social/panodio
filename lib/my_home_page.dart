@@ -12,17 +12,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ButtonTheme(
-          minWidth: 360,
-          height: 640,
-          child: ElevatedButton(
-            onPressed: Speech().listen,
-            child: const Text(
-              "   Drücke mich,\n"
-              "dann höre ich zu!",
-              style: TextStyle(fontSize: 40),
-            ),
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child: ElevatedButton(
+          onPressed: Speech().listen,
+          child: const Text(
+            "   Drücke mich,\n"
+            "dann höre ich zu!",
+            style: TextStyle(fontSize: 40),
           ),
         ),
       ),
