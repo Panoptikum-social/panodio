@@ -12,16 +12,18 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: ButtonTheme(
-          minWidth: 300,
-          height: 300,
+          minWidth: 360,
+          height: 640,
           child: RaisedButton(
             onPressed: Speech().listen,
-            child: Text("Listen"),
+            child: Text(
+              "   Drücke mich,\n"
+              "dann höre ich zu!",
+              style: TextStyle(fontSize: 40),
+            ),
           ),
         ),
       ),
     );
   }
 }
-
-
