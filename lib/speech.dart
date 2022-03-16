@@ -4,10 +4,12 @@ import 'panodio.dart';
 
 class Speech {
   var speech = SpeechToText();
+  var panodio = Panodio();
 
   Speech() : super();
 
   listen() async {
+    panodio.stopPlayer();
     bool available = await speech.initialize(
       onError: (error) => debugPrint("Error: ${error.toString()}"),
     );
@@ -16,7 +18,7 @@ class Speech {
       speech.listen(
         onResult: (result) {
           if (result.finalResult == true) {
-            Panodio(command: result.recognizedWords);
+            panodio.execute(result.recognizedWords);
           }
         },
         listenFor: const Duration(seconds: 5),
